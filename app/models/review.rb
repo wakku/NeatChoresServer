@@ -14,5 +14,8 @@ class Review < ActiveRecord::Base
   belongs_to :user
   attr_accessible :outcome
 
-  validates_presence_of :outcome, :task, :user
+  validates_presence_of :task, :user
+  validates :outcome, presence: true, inclusion: %w(approved disapproved)
+
+  after_save { self.task.check_reviews }
 end

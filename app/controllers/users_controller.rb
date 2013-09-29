@@ -15,6 +15,12 @@ class UsersController < ApplicationController
     render json: @user
   end
 
+  def get_info
+    @user = User.find_by_UID(params[:uid])
+
+    render json: @user
+  end
+
   # POST /users
   # POST /users.json
   def create
@@ -23,7 +29,7 @@ class UsersController < ApplicationController
     else
       group = Group.new
     end
-    @user = User.new(params[:user])
+    @user = User.new(user: params[:user])
     @user.group = group
 
     if @user.save!
@@ -45,7 +51,7 @@ class UsersController < ApplicationController
       return
     end
 
-    if @user.update_attributes(params[:user])
+    if @user.update_attributes(user: params[:user])
       head :no_content
     else
       render json: @user.errors, status: :unprocessable_entity

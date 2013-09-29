@@ -9,6 +9,9 @@ ChangeTracker::Application.routes.draw do
 
   resources :groups, except: [:new, :edit]
 
+  match 'check_punishment/:uid', to: 'Tasks#check_punishment'
+  match 'users', to: 'Users#get_info'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

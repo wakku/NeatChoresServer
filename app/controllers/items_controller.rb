@@ -2,7 +2,18 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all
+    filter = params[:filter].downcase.to_sym
+
+    case filter
+    when :all
+      @items = Item.all
+    when :open
+      @items = Item.where(status: "open")
+    when :waiting
+      @items = Item.where(status: "waiting")
+    when :done
+      @items = Item.where(status: "done")
+    end
 
     render json: @items
   end
@@ -18,9 +29,7 @@ class ItemsController < ApplicationController
   # POST /items
   # POST /items.json
   def create
-    @item = Item.new(params[:item])
-    @user = User.find_by_UID(params[:user])
-    @item.user = @user
+    @item = Item.new(item: params[:item])
 
     if @item.save
       render json: @item, status: :created, location: @item
@@ -34,7 +43,10 @@ class ItemsController < ApplicationController
   def update
     @item = Item.find(params[:id])
 
-    if @item.update_attributes(params[:item])
+    @user = User.find_by_UID(params[:user])
+    @item.user = @user
+
+    if @item.update_attributes(item: params[:item])
       head :no_content
     else
       render json: @item.errors, status: :unprocessable_entity

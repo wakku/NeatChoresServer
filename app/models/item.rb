@@ -15,5 +15,6 @@ class Item < ActiveRecord::Base
   belongs_to :user
   attr_accessible :category, :description, :status
 
-  validates_presence_of :category, :description, :status, :user
+  validates_presence_of :category, :description, :status
+  validates :status, presence: true, inclusion: %w(open waiting done)
 end

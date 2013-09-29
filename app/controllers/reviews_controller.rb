@@ -18,7 +18,7 @@ class ReviewsController < ApplicationController
   # POST /reviews
   # POST /reviews.json
   def create
-    @review = Review.new(params[:review])
+    @review = Review.new(review: params[:review])
     @user = User.find_by_UID(params[:user])
     task = Task.find(params[:task])
     @review.user = @user
@@ -36,7 +36,7 @@ class ReviewsController < ApplicationController
   def update
     @review = Review.find(params[:id])
 
-    if @review.update_attributes(params[:review])
+    if @review.update_attributes(review: params[:review])
       head :no_content
     else
       render json: @review.errors, status: :unprocessable_entity

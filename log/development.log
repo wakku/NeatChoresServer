@@ -1145,3 +1145,2489 @@ ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
 
 
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p429@change-tracker/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+Connecting to database specified by database.yml
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-28 20:08:16 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"Pending", "due_date"=>"10/10/10"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (8.7ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 00:08:16 UTC +00:00], ["description", nil], ["due_date", nil], ["status", nil], ["updated_at", Sun, 29 Sep 2013 00:08:16 UTC +00:00], ["user_id", nil]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Completed 201 Created in 76ms (Views: 1.3ms | ActiveRecord: 12.4ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-28 20:08:52 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"Pending", "due_date"=>"10/10/10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 00:08:52 UTC +00:00], ["description", nil], ["due_date", nil], ["status", nil], ["updated_at", Sun, 29 Sep 2013 00:08:52 UTC +00:00], ["user_id", 6]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Completed 201 Created in 27ms (Views: 1.2ms | ActiveRecord: 3.5ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-28 20:08:53 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"Pending", "due_date"=>"10/10/10"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 00:08:53 UTC +00:00], ["description", nil], ["due_date", nil], ["status", nil], ["updated_at", Sun, 29 Sep 2013 00:08:53 UTC +00:00], ["user_id", 5]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-28 20:09:56 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"Pending", "due_date"=>"10/10/10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 00:09:56 UTC +00:00], ["description", nil], ["due_date", nil], ["status", nil], ["updated_at", Sun, 29 Sep 2013 00:09:56 UTC +00:00], ["user_id", 2]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 201 Created in 4ms (Views: 0.7ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-28 20:09:58 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"Pending", "due_date"=>"10/10/10"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 00:09:58 UTC +00:00], ["description", nil], ["due_date", nil], ["status", nil], ["updated_at", Sun, 29 Sep 2013 00:09:58 UTC +00:00], ["user_id", 1]]
+  [1m[35m (1.7ms)[0m  commit transaction
+Completed 201 Created in 5ms (Views: 0.8ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-28 20:09:59 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"Pending", "due_date"=>"10/10/10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 00:09:59 UTC +00:00], ["description", nil], ["due_date", nil], ["status", nil], ["updated_at", Sun, 29 Sep 2013 00:09:59 UTC +00:00], ["user_id", 7]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 201 Created in 4ms (Views: 0.5ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-28 20:10:00 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"Pending", "due_date"=>"10/10/10"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 00:10:00 UTC +00:00], ["description", nil], ["due_date", nil], ["status", nil], ["updated_at", Sun, 29 Sep 2013 00:10:00 UTC +00:00], ["user_id", 6]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 201 Created in 5ms (Views: 0.6ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-28 20:10:01 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"Pending", "due_date"=>"10/10/10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 00:10:01 UTC +00:00], ["description", nil], ["due_date", nil], ["status", nil], ["updated_at", Sun, 29 Sep 2013 00:10:01 UTC +00:00], ["user_id", 8]]
+  [1m[35m (1.5ms)[0m  commit transaction
+Completed 201 Created in 4ms (Views: 0.7ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-28 20:10:02 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"Pending", "due_date"=>"10/10/10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 00:10:02 UTC +00:00], ["description", nil], ["due_date", nil], ["status", nil], ["updated_at", Sun, 29 Sep 2013 00:10:02 UTC +00:00], ["user_id", 4]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 201 Created in 4ms (Views: 0.6ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-28 20:10:02 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"Pending", "due_date"=>"10/10/10"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 00:10:02 UTC +00:00], ["description", nil], ["due_date", nil], ["status", nil], ["updated_at", Sun, 29 Sep 2013 00:10:02 UTC +00:00], ["user_id", 3]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 201 Created in 4ms (Views: 0.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 21:38:30 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 29ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 21:40:07 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 21:40:20 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 21:43:46 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 21:44:13 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 21:46:40 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 21:51:30 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 22:00:40 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 22:01:01 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 22:03:23 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 22:04:38 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 22:04:58 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 22:06:47 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 22:07:23 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 22:10:52 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 22:24:27 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 22:30:56 -0400
+Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 138.51.210.232 at 2013-09-28 22:33:55 -0400
+Processing by ItemsController#index as HTML
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-09-28 23:09:49 -0400
+Served asset /rails.png - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (2.5ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-09-29 01:16:52 -0400
+Served asset /rails.png - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 01:31:36 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"Pending", "due_date"=>"10/10/10"}
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/fernandogorodscy/Documents/workspace/NeatChoresServer/app/models/task.rb:18: syntax error, unexpected keyword_true, expecting keyword_end
+  validate :status, :presence true, inclusion: %w(open waiting done)
+                                  ^
+/Users/fernandogorodscy/Documents/workspace/NeatChoresServer/app/models/task.rb:18: Can't assign to true
+  validate :status, :presence true, inclusion: %w(open waiting done)
+                                   ^):
+  app/controllers/tasks_controller.rb:32:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 01:32:08 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"open", "due_date"=>"10/10/10"}
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/fernandogorodscy/Documents/workspace/NeatChoresServer/app/models/task.rb:18: syntax error, unexpected keyword_true, expecting keyword_end
+  validate :status, :presence true, inclusion: %w(open waiting done)
+                                  ^
+/Users/fernandogorodscy/Documents/workspace/NeatChoresServer/app/models/task.rb:18: Can't assign to true
+  validate :status, :presence true, inclusion: %w(open waiting done)
+                                   ^):
+  app/controllers/tasks_controller.rb:32:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 01:32:50 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"open", "due_date"=>"10/10/10"}
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/fernandogorodscy/Documents/workspace/NeatChoresServer/app/models/task.rb:18: syntax error, unexpected keyword_true, expecting keyword_end
+  validates :status, :presence true, inclusion: %w(open waiting done)
+                                   ^
+/Users/fernandogorodscy/Documents/workspace/NeatChoresServer/app/models/task.rb:18: Can't assign to true
+  validates :status, :presence true, inclusion: %w(open waiting done)
+                                    ^):
+  app/controllers/tasks_controller.rb:32:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.6ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 01:33:32 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"open", "due_date"=>"10/10/10"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 37ms
+
+ActiveRecord::RecordInvalid (Validation failed: Status can't be blank, Status is not included in the list):
+  app/controllers/tasks_controller.rb:36:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.0ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 01:34:09 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blablabla", "status"=>"open", "due_date"=>"10/10/10"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 3ms
+
+ActiveRecord::RecordInvalid (Validation failed: Status can't be blank, Status is not included in the list):
+  app/controllers/tasks_controller.rb:36:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.7ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 01:35:10 -0400
+Processing by TasksController#create as */*
+  Parameters: {"task"=>{"description"=>"blablabla", "status"=>"open", "due_date"=>"10/10/10"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 05:35:10 UTC +00:00], ["description", "blablabla"], ["due_date", Fri, 10 Oct 0010], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 05:35:10 UTC +00:00], ["user_id", 9]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Completed 201 Created in 11ms (Views: 0.9ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 01:35:17 -0400
+Processing by TasksController#create as */*
+  Parameters: {"task"=>{"description"=>"blablabla", "status"=>"open", "due_date"=>"10/10/10"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 05:35:17 UTC +00:00], ["description", "blablabla"], ["due_date", Fri, 10 Oct 0010], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 05:35:17 UTC +00:00], ["user_id", 7]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Completed 201 Created in 6ms (Views: 0.5ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 01:35:19 -0400
+Processing by TasksController#create as */*
+  Parameters: {"task"=>{"description"=>"blablabla", "status"=>"open", "due_date"=>"10/10/10"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 05:35:19 UTC +00:00], ["description", "blablabla"], ["due_date", Fri, 10 Oct 0010], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 05:35:19 UTC +00:00], ["user_id", 5]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Completed 201 Created in 5ms (Views: 0.8ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 01:35:33 -0400
+Processing by TasksController#create as */*
+  Parameters: {"task"=>{"description"=>"blablabla", "status"=>"waiting", "due_date"=>"10/10/10"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 05:35:33 UTC +00:00], ["description", "blablabla"], ["due_date", Fri, 10 Oct 0010], ["status", "waiting"], ["updated_at", Sun, 29 Sep 2013 05:35:33 UTC +00:00], ["user_id", 4]]
+  [1m[35m (3.1ms)[0m  commit transaction
+Completed 201 Created in 7ms (Views: 0.5ms | ActiveRecord: 3.9ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 01:35:34 -0400
+Processing by TasksController#create as */*
+  Parameters: {"task"=>{"description"=>"blablabla", "status"=>"waiting", "due_date"=>"10/10/10"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 05:35:34 UTC +00:00], ["description", "blablabla"], ["due_date", Fri, 10 Oct 0010], ["status", "waiting"], ["updated_at", Sun, 29 Sep 2013 05:35:34 UTC +00:00], ["user_id", 4]]
+  [1m[35m (2.0ms)[0m  commit transaction
+Completed 201 Created in 5ms (Views: 0.5ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 01:35:43 -0400
+Processing by TasksController#create as */*
+  Parameters: {"task"=>{"description"=>"blablabla", "status"=>"done", "due_date"=>"10/10/10"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 05:35:43 UTC +00:00], ["description", "blablabla"], ["due_date", Fri, 10 Oct 0010], ["status", "done"], ["updated_at", Sun, 29 Sep 2013 05:35:43 UTC +00:00], ["user_id", 3]]
+  [1m[35m (2.8ms)[0m  commit transaction
+Completed 201 Created in 6ms (Views: 0.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2013-09-29 01:36:44 -0400
+Processing by TasksController#index as */*
+  Parameters: {"filter"=>"all"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2013-09-29 01:36:58 -0400
+Processing by TasksController#index as */*
+  Parameters: {"filter"=>"done"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'done'
+Completed 200 OK in 15ms (Views: 1.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2013-09-29 01:37:10 -0400
+Processing by TasksController#index as */*
+  Parameters: {"filter"=>"waiting"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'waiting'[0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2013-09-29 01:37:16 -0400
+Processing by TasksController#index as */*
+  Parameters: {"filter"=>"open"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2013-09-29 01:54:07 -0400
+Processing by TasksController#index as */*
+  Parameters: {"filter"=>"open"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open'[0m
+Completed 200 OK in 13ms (Views: 7.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks" for 127.0.0.1 at 2013-09-29 01:54:27 -0400
+Processing by TasksController#index as */*
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2013-09-29 01:54:44 -0400
+Processing by ItemsController#index as */*
+  Parameters: {"filter"=>"all"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 10ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tasks" for 138.51.209.127 at 2013-09-29 02:17:31 -0400
+Processing by TasksController#index as */*
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 16ms (Views: 4.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/items" for 138.51.209.127 at 2013-09-29 02:17:44 -0400
+Processing by ItemsController#index as */*
+  Parameters: {"filter"=>"all"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 29ms (Views: 1.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 138.51.209.127 at 2013-09-29 02:19:08 -0400
+Processing by ItemsController#index as */*
+  Parameters: {"filter"=>"all"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" 
+Completed 200 OK in 10ms (Views: 1.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/items" for 138.51.209.127 at 2013-09-29 02:19:45 -0400
+Processing by ItemsController#create as */*
+  Parameters: {"item"=>{"description"=>"leite", "status"=>"open", "category"=>"groceries"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 3ms (Views: 0.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/items" for 138.51.209.127 at 2013-09-29 02:20:51 -0400
+Processing by ItemsController#create as */*
+  Parameters: {"item"=>{"description"=>"leite", "status"=>"open", "category"=>"groceries"}}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "items" ("category", "created_at", "description", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["category", "groceries"], ["created_at", Sun, 29 Sep 2013 06:20:51 UTC +00:00], ["description", "leite"], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 06:20:51 UTC +00:00], ["user_id", nil]]
+  [1m[36m (2.2ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 14ms (Views: 1.1ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/items" for 138.51.209.127 at 2013-09-29 02:21:10 -0400
+Processing by ItemsController#create as */*
+  Parameters: {"item"=>{"description"=>"leite", "status"=>"open", "category"=>"groceries"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "items" ("category", "created_at", "description", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category", "groceries"], ["created_at", Sun, 29 Sep 2013 06:21:10 UTC +00:00], ["description", "leite"], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 06:21:10 UTC +00:00], ["user_id", nil]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Completed 201 Created in 6ms (Views: 0.8ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/items" for 138.51.209.127 at 2013-09-29 02:21:42 -0400
+Processing by ItemsController#create as */*
+  Parameters: {"item"=>{"description"=>"screw", "status"=>"done", "category"=>"tools"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "items" ("category", "created_at", "description", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["category", "tools"], ["created_at", Sun, 29 Sep 2013 06:21:42 UTC +00:00], ["description", "screw"], ["status", "done"], ["updated_at", Sun, 29 Sep 2013 06:21:42 UTC +00:00], ["user_id", nil]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 4ms (Views: 0.6ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/items" for 138.51.209.127 at 2013-09-29 02:22:08 -0400
+Processing by ItemsController#create as */*
+  Parameters: {"item"=>{"description"=>"hammer", "status"=>"done", "category"=>"tools"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "items" ("category", "created_at", "description", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category", "tools"], ["created_at", Sun, 29 Sep 2013 06:22:08 UTC +00:00], ["description", "hammer"], ["status", "done"], ["updated_at", Sun, 29 Sep 2013 06:22:08 UTC +00:00], ["user_id", nil]]
+  [1m[35m (2.3ms)[0m  commit transaction
+Completed 201 Created in 5ms (Views: 0.8ms | ActiveRecord: 2.9ms)
+
+
+Started POST "/items" for 138.51.209.127 at 2013-09-29 02:23:08 -0400
+Processing by ItemsController#create as */*
+  Parameters: {"item"=>{"description"=>"tomate", "status"=>"open", "category"=>"groceries"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("category", "created_at", "description", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["category", "groceries"], ["created_at", Sun, 29 Sep 2013 06:23:08 UTC +00:00], ["description", "tomate"], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 06:23:08 UTC +00:00], ["user_id", nil]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 4ms (Views: 0.8ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/items" for 138.51.209.127 at 2013-09-29 02:23:36 -0400
+Processing by ItemsController#create as */*
+  Parameters: {"item"=>{"description"=>"alho", "status"=>"open", "category"=>"groceries"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "items" ("category", "created_at", "description", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category", "groceries"], ["created_at", Sun, 29 Sep 2013 06:23:36 UTC +00:00], ["description", "alho"], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 06:23:36 UTC +00:00], ["user_id", nil]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Completed 201 Created in 6ms (Views: 0.9ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/items" for 138.51.209.127 at 2013-09-29 02:23:57 -0400
+Processing by ItemsController#create as */*
+  Parameters: {"item"=>{"description"=>"macarrao", "status"=>"waiting", "category"=>"groceries"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "items" ("category", "created_at", "description", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["category", "groceries"], ["created_at", Sun, 29 Sep 2013 06:23:57 UTC +00:00], ["description", "macarrao"], ["status", "waiting"], ["updated_at", Sun, 29 Sep 2013 06:23:57 UTC +00:00], ["user_id", nil]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 4ms (Views: 0.8ms | ActiveRecord: 1.7ms)
+
+
+Started POST "/items" for 138.51.209.127 at 2013-09-29 02:29:31 -0400
+Processing by ItemsController#create as */*
+  Parameters: {"item"=>{"description"=>"perfum", "status"=>"waiting", "category"=>"cosmetics"}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "items" ("category", "created_at", "description", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["category", "cosmetics"], ["created_at", Sun, 29 Sep 2013 06:29:31 UTC +00:00], ["description", "perfum"], ["status", "waiting"], ["updated_at", Sun, 29 Sep 2013 06:29:31 UTC +00:00], ["user_id", nil]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Completed 201 Created in 5ms (Views: 1.0ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/items" for 138.51.209.127 at 2013-09-29 02:29:44 -0400
+Processing by ItemsController#index as */*
+  Parameters: {"filter"=>"all"}
+  [1m[36mItem Load (0.4ms)[0m  [1mSELECT "items".* FROM "items" [0m
+Completed 200 OK in 6ms (Views: 3.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/items" for 138.51.209.127 at 2013-09-29 02:30:55 -0400
+Processing by ItemsController#index as */*
+  Parameters: {"filter"=>"open"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."status" = 'open'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/items" for 138.51.209.127 at 2013-09-29 02:31:49 -0400
+Processing by ItemsController#index as */*
+  Parameters: {"filter"=>"done"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."status" = 'done'[0m
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/items" for 138.51.209.127 at 2013-09-29 02:32:05 -0400
+Processing by ItemsController#index as */*
+  Parameters: {"filter"=>"waiting"}
+  [1m[35mItem Load (0.3ms)[0m  SELECT "items".* FROM "items" WHERE "items"."status" = 'waiting'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-09-29 03:02:55 -0400
+Served asset /rails.png - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 03:48:02 -0400
+
+SyntaxError (/Users/fernandogorodscy/Documents/workspace/NeatChoresServer/app/controllers/application_controller.rb:4: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+		render json: Task.check_punishment params[:id]
+		                                         ^):
+  activesupport (3.2.13) lib/active_support/dependencies.rb:469:in `load'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:469:in `block in load_file'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:639:in `new_constants_in'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:468:in `load_file'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:353:in `require_or_load'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:502:in `load_missing_constant'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:192:in `block in const_missing'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `each'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:190:in `const_missing'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:230:in `block in constantize'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:229:in `each'
+  activesupport (3.2.13) lib/active_support/inflector/methods.rb:229:in `constantize'
+  activesupport (3.2.13) lib/active_support/dependencies.rb:554:in `get'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:32:in `call'
+  journey (1.0.4) lib/journey/router.rb:68:in `block in call'
+  journey (1.0.4) lib/journey/router.rb:56:in `each'
+  journey (1.0.4) lib/journey/router.rb:56:in `call'
+  actionpack (3.2.13) lib/action_dispatch/routing/route_set.rb:612:in `call'
+  rack (1.4.5) lib/rack/etag.rb:23:in `call'
+  rack (1.4.5) lib/rack/conditionalget.rb:25:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/head.rb:14:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  activerecord (3.2.13) lib/active_record/query_cache.rb:64:in `call'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:479:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `_run__4406464060151717551__call__4074225644000288357__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 03:49:08 -0400
+Processing by ApplicationController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user" = '9'[0m
+SQLite3::SQLException: no such column: tasks.user: SELECT "tasks".* FROM "tasks"  WHERE "tasks"."status" = 'open' AND "tasks"."user" = '9'
+Completed 500 Internal Server Error in 6ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: tasks.user: SELECT "tasks".* FROM "tasks"  WHERE "tasks"."status" = 'open' AND "tasks"."user" = '9'):
+  app/models/task.rb:22:in `check_punishment'
+  app/controllers/application_controller.rb:4:in `check_punishment'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.6ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 03:53:42 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user" = '9'
+SQLite3::SQLException: no such column: tasks.user: SELECT "tasks".* FROM "tasks"  WHERE "tasks"."status" = 'open' AND "tasks"."user" = '9'
+Completed 500 Internal Server Error in 6ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: no such column: tasks.user: SELECT "tasks".* FROM "tasks"  WHERE "tasks"."status" = 'open' AND "tasks"."user" = '9'):
+  app/models/task.rb:22:in `check_punishment'
+  app/controllers/tasks_controller.rb:30:in `check_punishment'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 03:54:31 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9[0m
+Completed 500 Internal Server Error in 31ms
+
+ArgumentError (comparison of Date with Time failed):
+  app/models/task.rb:23:in `<'
+  app/models/task.rb:23:in `block in check_punishment'
+  app/models/task.rb:22:in `check_punishment'
+  app/controllers/tasks_controller.rb:30:in `check_punishment'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 03:56:11 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9
+Completed 500 Internal Server Error in 11ms
+
+NoMethodError (undefined method `now' for Date:Class):
+  app/models/task.rb:23:in `block in check_punishment'
+  app/models/task.rb:22:in `check_punishment'
+  app/controllers/tasks_controller.rb:30:in `check_punishment'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 03:59:34 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9[0m
+Completed 200 OK in 13ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/check_punishment/7" for 127.0.0.1 at 2013-09-29 03:59:42 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"7"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 7
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/7" for 127.0.0.1 at 2013-09-29 04:00:16 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 7[0m
+Completed 200 OK in 19ms (Views: 0.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:00:19 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:02:41 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9[0m
+Completed 200 OK in 29ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/check_punishment/7" for 127.0.0.1 at 2013-09-29 04:02:44 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"7"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 7
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/7" for 127.0.0.1 at 2013-09-29 04:03:43 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 7[0m
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:03:45 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:05:14 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9[0m
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/check_punishment/7" for 127.0.0.1 at 2013-09-29 04:05:30 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"7"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 7
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/7" for 127.0.0.1 at 2013-09-29 04:05:39 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 7[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/7" for 127.0.0.1 at 2013-09-29 04:05:47 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"7"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 7
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:05:50 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9[0m
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:08:57 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9
+Completed 200 OK in 32ms (Views: 0.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/check_punishment/7" for 127.0.0.1 at 2013-09-29 04:09:01 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 7[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/7" for 127.0.0.1 at 2013-09-29 04:09:02 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"7"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 7
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/7" for 127.0.0.1 at 2013-09-29 04:09:04 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 7[0m
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:09:37 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:09:38 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:09:41 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:09:42 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:09:43 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Completed 200 OK in 2ms (Views: 0.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:10:22 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9[0m
+Completed 500 Internal Server Error in 11ms
+
+NoMethodError (undefined method `update!' for #<Task:0x0000010421f638>):
+  app/models/task.rb:25:in `block in check_punishment'
+  app/models/task.rb:22:in `check_punishment'
+  app/controllers/tasks_controller.rb:30:in `check_punishment'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:10:54 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "tasks" SET "updated_at" = '2013-09-29 08:10:54.125439' WHERE "tasks"."id" = 12
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 17ms (Views: 0.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:10:55 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/9" for 127.0.0.1 at 2013-09-29 04:10:56 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 9[0m
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/5" for 127.0.0.1 at 2013-09-29 04:12:03 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"5"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 5
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  UPDATE "tasks" SET "updated_at" = '2013-09-29 08:12:03.880917' WHERE "tasks"."id" = 14
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+Completed 200 OK in 38ms (Views: 0.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/check_punishment/5" for 127.0.0.1 at 2013-09-29 04:12:09 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"5"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 5
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/5" for 127.0.0.1 at 2013-09-29 04:12:14 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 5[0m
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/5" for 127.0.0.1 at 2013-09-29 04:12:15 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"5"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 5
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/check_punishment/5" for 127.0.0.1 at 2013-09-29 04:12:36 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 5[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.2ms)[0m  [1mUPDATE "tasks" SET "updated_at" = '2013-09-29 08:12:36.051665' WHERE "tasks"."id" = 14[0m
+  [1m[35m (1.9ms)[0m  commit transaction
+Completed 200 OK in 4ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/check_punishment/5" for 127.0.0.1 at 2013-09-29 04:12:36 -0400
+Processing by TasksController#check_punishment as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."status" = 'open' AND "tasks"."user_id" = 5[0m
+Completed 200 OK in 1ms (Views: 0.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:26:17 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" IS NULL LIMIT 1
+Completed 404 Not Found in 26ms
+
+ActiveRecord::RecordNotFound (Couldn't find Task without an ID):
+  app/controllers/reviews_controller.rb:23:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:28 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:28:28 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:28 UTC +00:00], ["user_id", 7]]
+  [1m[36m (2.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 15ms (Views: 0.1ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:34 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:28:34 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:34 UTC +00:00], ["user_id", 7]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 7ms (Views: 0.1ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:35 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:28:35 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:35 UTC +00:00], ["user_id", 7]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.0ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:36 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:28:36 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:36 UTC +00:00], ["user_id", 7]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:37 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:28:37 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:37 UTC +00:00], ["user_id", 7]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:38 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:28:38 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:38 UTC +00:00], ["user_id", 7]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.3ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:38 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:28:38 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:38 UTC +00:00], ["user_id", 7]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.2ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:39 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:28:39 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:39 UTC +00:00], ["user_id", 7]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 8ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:39 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:28:39 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:39 UTC +00:00], ["user_id", 7]]
+  [1m[36m (1.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 26ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:40 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:28:40 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:40 UTC +00:00], ["user_id", 7]]
+  [1m[35m (1.6ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 8ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:40 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:28:40 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:40 UTC +00:00], ["user_id", 7]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:40 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:28:40 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:40 UTC +00:00], ["user_id", 7]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:41 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:28:41 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:41 UTC +00:00], ["user_id", 7]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:41 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:28:41 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:41 UTC +00:00], ["user_id", 7]]
+  [1m[35m (2.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:42 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:28:42 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:42 UTC +00:00], ["user_id", 7]]
+  [1m[36m (1.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 7ms (Views: 0.1ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:42 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:28:42 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:42 UTC +00:00], ["user_id", 7]]
+  [1m[35m (1.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 8ms (Views: 0.1ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:43 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:28:43 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:43 UTC +00:00], ["user_id", 7]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:43 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:28:43 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:43 UTC +00:00], ["user_id", 7]]
+  [1m[35m (1.8ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:44 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:28:44 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:44 UTC +00:00], ["user_id", 7]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:44 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:28:44 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:44 UTC +00:00], ["user_id", 7]]
+  [1m[35m (0.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 5ms (Views: 0.1ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:28:45 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:28:45 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:28:45 UTC +00:00], ["user_id", 7]]
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 6ms (Views: 0.1ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:29:59 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (5059.7ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:29:59 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:29:59 UTC +00:00], ["user_id", 7]]
+SQLite3::BusyException: database is locked: INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)
+  [1m[35m (0.5ms)[0m  rollback transaction
+SQLite3::BusyException: cannot rollback transaction - SQL statements in progress: rollback transaction
+Completed 500 Internal Server Error in 5064ms
+
+ActiveRecord::StatementInvalid (SQLite3::BusyException: cannot rollback transaction - SQL statements in progress: rollback transaction):
+  app/controllers/reviews_controller.rb:27:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:30:34 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.0ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+SQLite3::SQLException: cannot start a transaction within a transaction: begin transaction
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: cannot start a transaction within a transaction: begin transaction):
+  app/controllers/reviews_controller.rb:27:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:32:17 -0400
+
+SQLite3::BusyException (database is locked):
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `close'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `dealloc'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:58:in `block in clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:144:in `clear_cache!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:138:in `disconnect!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:157:in `block (2 levels) in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `block in clear_reloadable_connections!'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:153:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `block in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `each_value'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_specification.rb:187:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/railtie.rb:103:in `block (2 levels) in <class:Railtie>'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:429:in `_run__4060309833533757803__prepare__4074225644000288357__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.6ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:32:48 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1
+Completed 500 Internal Server Error in 42ms
+
+ActiveRecord::StatementInvalid (SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1):
+  app/controllers/reviews_controller.rb:23:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:32:53 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1):
+  app/controllers/reviews_controller.rb:23:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:34:14 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1):
+  app/controllers/reviews_controller.rb:23:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:35:10 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Task without an ID):
+  app/controllers/reviews_controller.rb:23:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:35:39 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "2"]]
+SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1
+Completed 500 Internal Server Error in 2ms
+
+ActiveRecord::StatementInvalid (SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1):
+  app/controllers/reviews_controller.rb:23:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:36:30 -0400
+
+SQLite3::MisuseException (out of memory):
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `close'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `dealloc'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:58:in `block in clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:144:in `clear_cache!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:138:in `disconnect!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:157:in `block (2 levels) in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `block in clear_reloadable_connections!'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:153:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `block in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `each_value'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_specification.rb:187:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/railtie.rb:103:in `block (2 levels) in <class:Railtie>'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:429:in `_run__4060309833533757803__prepare__4074225644000288357__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:36:41 -0400
+
+SQLite3::MisuseException (out of memory):
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `close'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `dealloc'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:58:in `block in clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:144:in `clear_cache!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:138:in `disconnect!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:157:in `block (2 levels) in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `block in clear_reloadable_connections!'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:153:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `block in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `each_value'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_specification.rb:187:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/railtie.rb:103:in `block (2 levels) in <class:Railtie>'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:429:in `_run__4060309833533757803__prepare__4074225644000288357__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:37:02 -0400
+
+SQLite3::MisuseException (out of memory):
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `close'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `dealloc'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:58:in `block in clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:144:in `clear_cache!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:138:in `disconnect!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:157:in `block (2 levels) in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `block in clear_reloadable_connections!'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:153:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `block in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `each_value'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_specification.rb:187:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/railtie.rb:103:in `block (2 levels) in <class:Railtie>'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:429:in `_run__4060309833533757803__prepare__4074225644000288357__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:37:12 -0400
+
+SQLite3::MisuseException (out of memory):
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `close'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `dealloc'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:58:in `block in clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:144:in `clear_cache!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:138:in `disconnect!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:157:in `block (2 levels) in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `block in clear_reloadable_connections!'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:153:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `block in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `each_value'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_specification.rb:187:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/railtie.rb:103:in `block (2 levels) in <class:Railtie>'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:429:in `_run__4060309833533757803__prepare__4074225644000288357__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.1ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:37:58 -0400
+
+SQLite3::MisuseException (out of memory):
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `close'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `dealloc'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:58:in `block in clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:144:in `clear_cache!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:138:in `disconnect!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:157:in `block (2 levels) in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `block in clear_reloadable_connections!'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:153:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `block in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `each_value'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_specification.rb:187:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/railtie.rb:103:in `block (2 levels) in <class:Railtie>'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:429:in `_run__4060309833533757803__prepare__4074225644000288357__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:38:09 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "2"]]
+SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1
+Completed 500 Internal Server Error in 23ms
+
+ActiveRecord::StatementInvalid (SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1):
+  app/controllers/reviews_controller.rb:23:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:43:06 -0400
+
+SQLite3::MisuseException (out of memory):
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `close'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:69:in `dealloc'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:58:in `block in clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:57:in `clear'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:144:in `clear_cache!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/sqlite_adapter.rb:138:in `disconnect!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:157:in `block (2 levels) in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `each'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:155:in `block in clear_reloadable_connections!'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/monitor.rb:211:in `mon_synchronize'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:153:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `block in clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `each_value'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_pool.rb:392:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/connection_adapters/abstract/connection_specification.rb:187:in `clear_reloadable_connections!'
+  activerecord (3.2.13) lib/active_record/railtie.rb:103:in `block (2 levels) in <class:Railtie>'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:429:in `_run__4060309833533757803__prepare__4074225644000288357__callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  activesupport (3.2.13) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  actionpack (3.2.13) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:43:35 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "2"]]
+SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1
+Completed 500 Internal Server Error in 22ms
+
+ActiveRecord::StatementInvalid (SQLite3::Exception: cannot use a closed statement: SELECT  "tasks".* FROM "tasks"  WHERE "tasks"."id" = ? LIMIT 1):
+  app/controllers/reviews_controller.rb:23:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+Connecting to database specified by database.yml
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (1.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (0.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (2.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateGroups (20130928123035)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130928123035')[0m
+  [1m[35m (0.6ms)[0m  commit transaction
+Migrating to CreateUsers (20130928123302)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "surname" varchar(255), "UID" varchar(255), "group_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_users_on_group_id" ON "users" ("group_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130928123302')
+  [1m[36m (0.5ms)[0m  [1mcommit transaction[0m
+Migrating to CreateTasks (20130928123351)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "tasks" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "status" varchar(255), "due_date" date, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_tasks_on_user_id" ON "tasks" ("user_id")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130928123351')[0m
+  [1m[35m (0.7ms)[0m  commit transaction
+Migrating to CreateReviews (20130928123541)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "reviews" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "outcome" varchar(255), "task_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.2ms)[0m  [1mCREATE INDEX "index_reviews_on_task_id" ON "reviews" ("task_id")[0m
+  [1m[35m (0.2ms)[0m  CREATE INDEX "index_reviews_on_user_id" ON "reviews" ("user_id")
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20130928123541')[0m
+  [1m[35m (0.9ms)[0m  commit transaction
+Migrating to CreateItems (20130928123614)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "items" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar(255), "category" varchar(255), "status" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mCREATE INDEX "index_items_on_user_id" ON "items" ("user_id")[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130928123614')
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:45:36 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "2"]]
+Completed 404 Not Found in 59ms
+
+ActiveRecord::RecordNotFound (Couldn't find Task with id=2):
+  app/controllers/reviews_controller.rb:23:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.2ms)
+
+
+Started POST "/tasks" for 127.0.0.1 at 2013-09-29 04:47:54 -0400
+Processing by TasksController#create as */*
+  Parameters: {"task"=>{"description"=>"blabal", "status"=>"waiting"}, "user"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (5.8ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:47:54 UTC +00:00], ["description", "blabal"], ["due_date", nil], ["status", "waiting"], ["updated_at", Sun, 29 Sep 2013 08:47:54 UTC +00:00], ["user_id", nil]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Completed 201 Created in 22ms (Views: 1.3ms | ActiveRecord: 6.7ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:48:14 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 8ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-29 04:49:14 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Fefo", "surname"=>"Gorodscy", "uid"=>"q1w2e3"}}
+Completed 500 Internal Server Error in 7ms
+
+ActiveModel::MassAssignmentSecurity::Error (Can't mass-assign protected attributes: uid):
+  app/controllers/users_controller.rb:32:in `new'
+  app/controllers/users_controller.rb:32:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2013-09-29 04:49:47 -0400
+Processing by UsersController#create as */*
+  Parameters: {"user"=>{"name"=>"Fefo", "surname"=>"Gorodscy", "UID"=>"q1w2e3"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "groups" ("created_at", "updated_at") VALUES (?, ?)  [["created_at", Sun, 29 Sep 2013 08:49:47 UTC +00:00], ["updated_at", Sun, 29 Sep 2013 08:49:47 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("UID", "created_at", "group_id", "name", "surname", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["UID", "q1w2e3"], ["created_at", Sun, 29 Sep 2013 08:49:47 UTC +00:00], ["group_id", 1], ["name", "Fefo"], ["surname", "Gorodscy"], ["updated_at", Sun, 29 Sep 2013 08:49:47 UTC +00:00]]
+  [1m[35m (2.7ms)[0m  commit transaction
+Completed 201 Created in 14ms (Views: 1.2ms | ActiveRecord: 3.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:50:15 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"3ry287r2y3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = '3ry287r2y3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 3ms (Views: 0.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:50:34 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"q1w2e3", "task"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = 'q1w2e3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:50:34 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:50:34 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."task_id" = 1[0m
+  [1m[35m (0.3ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 19ms
+
+NoMethodError (undefined method `size' for #<Class:0x00000102c60d60>):
+  app/models/task.rb:21:in `check_reviews'
+  app/models/review.rb:20:in `block in <class:Review>'
+  app/controllers/reviews_controller.rb:27:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.2ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:51:03 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"q1w2e3", "task"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = 'q1w2e3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:51:03 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:51:03 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."task_id" = 1[0m
+  [1m[35m (3.4ms)[0m  commit transaction
+Completed 201 Created in 58ms (Views: 1.4ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:54:37 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"q1w2e3", "task"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = 'q1w2e3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:54:37 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:54:37 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."task_id" = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (3.2ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 40ms (Views: 1.2ms | ActiveRecord: 5.2ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:54:45 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"q1w2e3", "task"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = 'q1w2e3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:54:45 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:54:45 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."task_id" = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35m (1.8ms)[0m  commit transaction
+Completed 201 Created in 7ms (Views: 0.6ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:55:30 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"q1w2e3", "task"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."UID" = 'q1w2e3' LIMIT 1[0m
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1  [["id", "1"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 08:55:30 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:55:30 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."task_id" = 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+  [1m[36m (1.8ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 42ms (Views: 1.2ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/reviews" for 127.0.0.1 at 2013-09-29 04:59:05 -0400
+Processing by ReviewsController#create as */*
+  Parameters: {"review"=>{"outcome"=>"approved"}, "user"=>"q1w2e3", "task"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."UID" = 'q1w2e3' LIMIT 1
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "reviews" ("created_at", "outcome", "task_id", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 08:59:05 UTC +00:00], ["outcome", "approved"], ["task_id", 1], ["updated_at", Sun, 29 Sep 2013 08:59:05 UTC +00:00], ["user_id", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "reviews" WHERE "reviews"."task_id" = 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+  [1m[35m (0.1ms)[0m  UPDATE "tasks" SET "status" = 'done', "updated_at" = '2013-09-29 08:59:05.194943' WHERE "tasks"."id" = 1
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 61ms (Views: 1.3ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-09-29 07:05:27 -0400
+Served asset /rails.png - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/tasks" for 138.51.209.175 at 2013-09-29 07:32:18 -0400
+Processing by TasksController#index as HTML
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  app/controllers/tasks_controller.rb:5:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.0ms)
+
+
+Started POST "/tasks" for 138.51.209.221 at 2013-09-29 07:32:32 -0400
+Processing by TasksController#create as */*
+  Parameters: {"task"=>{"description"=>"blabal", "status"=>"waiting"}, "user"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 11:32:32 UTC +00:00], ["description", "blabal"], ["due_date", nil], ["status", "waiting"], ["updated_at", Sun, 29 Sep 2013 11:32:32 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 29ms (Views: 1.4ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 07:33:23 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 07:36:45 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"task"=>"[object Object]"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `stringify_keys' for "[object Object]":String):
+  app/controllers/tasks_controller.rb:36:in `new'
+  app/controllers/tasks_controller.rb:36:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 07:40:34 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"description"=>"a", "due_date"=>"2013-05-10 44:00"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms
+
+ActiveRecord::RecordInvalid (Validation failed: Status can't be blank, Status is not included in the list):
+  app/controllers/tasks_controller.rb:40:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 07:42:13 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"description"=>"a", "due_date"=>"2013-05-10 44:00"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 43ms
+
+ActiveRecord::RecordInvalid (Validation failed: Status can't be blank, Status is not included in the list):
+  app/controllers/tasks_controller.rb:40:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 07:42:21 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"description"=>"a", "due_date"=>"2013-05-10 44:00"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+Completed 422 Unprocessable Entity in 4ms
+
+ActiveRecord::RecordInvalid (Validation failed: Status can't be blank, Status is not included in the list):
+  app/controllers/tasks_controller.rb:40:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 07:43:00 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"description"=>"a", "due_date"=>"2013-05-10 44:00", "status"=>"open"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 11:43:00 UTC +00:00], ["description", "a"], ["due_date", Fri, 10 May 2013], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 11:43:00 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 24ms (Views: 1.1ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 07:44:47 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"task"=>"[object Object]"}
+Completed 500 Internal Server Error in 25ms
+
+NoMethodError (undefined method `stringify_keys' for "\"[object Object]\"":String):
+  app/controllers/tasks_controller.rb:37:in `new'
+  app/controllers/tasks_controller.rb:37:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 07:45:33 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"task"=>"[object Object]"}
+Completed 500 Internal Server Error in 5ms
+
+NameError (uninitialized constant TasksController::Json):
+  app/controllers/tasks_controller.rb:37:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 07:46:21 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"task"=>"[object Object]"}
+Completed 500 Internal Server Error in 5ms
+
+JSON::ParserError (399: unexpected token at 'object Object]'):
+  app/controllers/tasks_controller.rb:37:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 07:47:22 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.1ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 12ms (Views: 1.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:02:50 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+Completed 200 OK in 31ms (Views: 1.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:02:53 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:02:54 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:02:55 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:02:57 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:02:58 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:03:00 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:03:45 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.2ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:03:49 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:03:50 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:03:51 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[36mTask Load (0.2ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:03:51 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:03:52 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:04:28 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:04:30 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[36mTask Load (0.3ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:04:32 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[35mTask Load (0.3ms)[0m  SELECT "tasks".* FROM "tasks" 
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tasks?filter=all" for 138.51.209.175 at 2013-09-29 08:04:34 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"filter"=>"all"}
+  [1m[36mTask Load (0.4ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 08:09:39 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"task"=>"[object Object]"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+Completed 422 Unprocessable Entity in 15ms
+
+ActiveRecord::RecordInvalid (Validation failed: Status can't be blank, Status is not included in the list):
+  app/controllers/tasks_controller.rb:40:in `create'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.1ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 08:10:52 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"description"=>"vai", "due_date"=>"Sun Sep 29 2013 08:10:50 GMT-0400 (Eastern Daylight Time)", "status"=>"open"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 12:10:52 UTC +00:00], ["description", "vai"], ["due_date", Sun, 29 Sep 2013], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 12:10:52 UTC +00:00], ["user_id", 1]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Completed 201 Created in 8ms (Views: 0.7ms | ActiveRecord: 1.9ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 08:14:37 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"description"=>"ertaewy", "due_date"=>"Sun Sep 29 2013 08:14:34 GMT-0400 (Eastern Daylight Time)", "status"=>"open"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Sun, 29 Sep 2013 12:14:37 UTC +00:00], ["description", "ertaewy"], ["due_date", Sun, 29 Sep 2013], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 12:14:37 UTC +00:00], ["user_id", 1]]
+  [1m[35m (1.6ms)[0m  commit transaction
+Completed 201 Created in 7ms (Views: 0.8ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/tasks?description=acabe&due_date=Sun+Sep+29+2013+08%3A16%3A41+GMT-0400+%28Eastern+Daylight+Time%29&status=open" for 138.51.209.175 at 2013-09-29 08:16:44 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"description"=>"acabe", "due_date"=>"Sun Sep 29 2013 08:16:41 GMT-0400 (Eastern Daylight Time)", "status"=>"open"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  app/controllers/tasks_controller.rb:5:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.5ms)
+
+
+Started GET "/tasks?description=acabe&due_date=2013-09-10&status=open" for 138.51.209.175 at 2013-09-29 08:17:37 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"description"=>"acabe", "due_date"=>"2013-09-10", "status"=>"open"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  app/controllers/tasks_controller.rb:5:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2013-09-29 08:18:19 -0400
+Served asset /rails.png - 404 Not Found (0ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/rails.png"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.13) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-1.9.3-p392/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.9ms)
+
+
+Started GET "/tasks?description=ppppdfghkjsdfghj&due_date=Sun+Sep+29+2013+08%3A19%3A33+GMT-0400+%28Eastern+Daylight+Time%29&status=open" for 138.51.209.175 at 2013-09-29 08:19:35 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"description"=>"ppppdfghkjsdfghj", "due_date"=>"Sun Sep 29 2013 08:19:33 GMT-0400 (Eastern Daylight Time)", "status"=>"open"}
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `downcase' for nil:NilClass):
+  app/controllers/tasks_controller.rb:5:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/tasks?description=putz&due_date=Sun+Sep+29+2013+08%3A20%3A32+GMT-0400+%28Eastern+Daylight+Time%29&status=open" for 138.51.209.175 at 2013-09-29 08:20:34 -0400
+Processing by TasksController#index as HTML
+  Parameters: {"description"=>"putz", "due_date"=>"Sun Sep 29 2013 08:20:32 GMT-0400 (Eastern Daylight Time)", "status"=>"open"}
+  [1m[36mTask Load (0.1ms)[0m  [1mSELECT "tasks".* FROM "tasks" [0m
+Completed 200 OK in 13ms (Views: 1.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 08:28:06 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"description"=>"pdsdfghjk", "due_date"=>"Sun Sep 29 2013 08:28:03 GMT-0400 (Eastern Daylight Time)", "status"=>"open"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 12:28:06 UTC +00:00], ["description", "pdsdfghjk"], ["due_date", Sun, 29 Sep 2013], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 12:28:06 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.6ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 16ms (Views: 0.8ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 08:31:41 -0400
+Processing by TasksController#create as HTML
+  Parameters: {"description"=>"fasfdwe", "due_date"=>"Sun Sep 29 2013 08:31:39 GMT-0400 (Eastern Daylight Time)", "status"=>"open"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 12:31:41 UTC +00:00], ["description", "fasfdwe"], ["due_date", Sun, 29 Sep 2013], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 12:31:41 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 7ms (Views: 1.3ms | ActiveRecord: 2.0ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 08:38:13 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blabla", "status"=>"open"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 12:38:13 UTC +00:00], ["description", "blabla"], ["due_date", nil], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 12:38:13 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 5ms (Views: 0.7ms | ActiveRecord: 1.8ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 08:38:21 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blabla", "status"=>"open"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 12:38:21 UTC +00:00], ["description", "blabla"], ["due_date", nil], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 12:38:21 UTC +00:00], ["user_id", 1]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 5ms (Views: 0.6ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/tasks" for 138.51.209.175 at 2013-09-29 08:40:16 -0400
+Processing by TasksController#create as */*
+  Parameters: {"description"=>"blabla", "status"=>"open"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" ORDER BY RANDOM() LIMIT 1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "tasks" ("created_at", "description", "due_date", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", Sun, 29 Sep 2013 12:40:16 UTC +00:00], ["description", "blabla"], ["due_date", nil], ["status", "open"], ["updated_at", Sun, 29 Sep 2013 12:40:16 UTC +00:00], ["user_id", 1]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+Completed 201 Created in 5ms (Views: 0.8ms | ActiveRecord: 1.9ms)

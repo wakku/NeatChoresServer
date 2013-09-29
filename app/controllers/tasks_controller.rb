@@ -2,7 +2,20 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   def index
-    @tasks = Task.all
+    filter = params[:filter].downcase.to_sym if params[:filter]
+
+    case filter
+    when :all
+      @tasks = Task.all
+    when :open
+      @tasks = Task.where(status: "open")
+    when :waiting
+      @tasks = Task.where(status: "waiting")
+    when :done
+      @tasks = Task.where(status: "done")
+    else
+      @tasks = Task.all
+    end
 
     render json: @tasks
   end
@@ -15,14 +28,18 @@ class TasksController < ApplicationController
     render json: @task
   end
 
+  def check_punishment
+    render json: Task.check_punishment(params[:uid])
+  end
+
   # POST /tasks
   # POST /tasks.json
   def create
-    @task = Task.new(params[:task])
-    @user = User.find_by_UID(params[:user])
-    @task.user = @user
+    @task = Task.new(task: params[:task])
+    user = User.order("RANDOM()").first
+    @task.user = user
 
-    if @task.save
+    if @task.save!
       render json: @task, status: :created, location: @task
     else
       render json: @task.errors, status: :unprocessable_entity
@@ -34,7 +51,7 @@ class TasksController < ApplicationController
   def update
     @task = Task.find(params[:id])
 
-    if @task.update_attributes(params[:task])
+    if @task.update_attributes(task: params[:task])
       head :no_content
     else
       render json: @task.errors, status: :unprocessable_entity
